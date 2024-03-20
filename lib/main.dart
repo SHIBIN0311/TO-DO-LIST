@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:hive_to_do_list/pages/home_page.dart';
+import 'package:hive_to_do_list/pages/welcome_page.dart';
 
 void main() async {
   await Hive.initFlutter();
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       title: 'TODO LIST',
       theme: ThemeData(primarySwatch: Colors.amber),
       debugShowCheckedModeBanner: false,
-      home: const HomePage(),
+      home: const WelcomePage(),
     );
   }
 }
